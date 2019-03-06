@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+.progress{
+   animation: all;
+
+}
 #BODY{
   
   background-image: url(imagenes/portada2.jpg);
