@@ -93,16 +93,23 @@
 
  			</div>
  		</div>
- 		  <h3 class="text-dark display-4 w3-animate-zoom">Habilidades</h3>
+ 		  <h3 class="text-dark display-4 w3-animate-zoom">Habilidades En Lenguajes</h3>
 
+        <div class="progress" style="height:26px">
+         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-primary" id="CSS" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        	 <h4>CSS 75%</h4>
+         </div>
+       </div>
 	   <div class="progress" style="height:26px">
          <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-dark" id="HTML" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
-        	 <h4>HTML 85%</h4>
+        	 <h4>C++ 70%</h4>
          </div>
-       </div> 
+
+       </div>
+       
         <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-danger" id="CSS" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
-        	 <h4>HTML 75%</h4>
+         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-danger" id="HTML5" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        	 <h4>HTML 85%</h4>
          </div>
        </div> 
         <div class="progress" style="height:26px">
@@ -110,6 +117,7 @@
         	 <h4>JAVASCRIPT  75%</h4>
          </div>
        </div>
+
 	   <div class="progress" style="height:26px">
          <div class="progress-bar progress-bar-striped active w3-animate-zoom" id="php" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
         	 <h4>php 80%</h4>
@@ -120,13 +128,20 @@
         	 <h4>JAVA 65%</h4>
          </div>
        </div>	
+
+        
+
 		<h3 class="text-dark display-4 w3-animate-zoom">Manejo de Frameworks</h3>	
         <div class="progress" style="height:26px">
          <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-warning" id="LARAVEL" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
         	 <h4>LARAVEL 85%</h4>
          </div>
        </div>	
-
+        <div class="progress" style="height:26px">
+         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-danger" id="BOOSTRAP" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        	 <h4>BOOSTRAP 70%</h4>
+         </div>
+       </div>	
  	</div>
         
          
@@ -199,8 +214,10 @@
         $(document).ready(function() {
             $("#php").css("width", "80%");
             $("#php").attr("aria-valuenow", "80%");
-             $("#HTML").css("width", "85%");
-            $("#HTML").attr("aria-valuenow", "85%");
+             $("#HTML").css("width", "70%");
+            $("#HTML").attr("aria-valuenow", "70%");
+            $("#HTML5").css("width", "85%");
+            $("#HTML5").attr("aria-valuenow", "85%");
              $("#CSS").css("width", "75%");
             $("#CSS").attr("aria-valuenow", "75%");
             $("#JAVASCRIPT").css("width", "75%");
@@ -209,6 +226,8 @@
             $("#JAVA").attr("aria-valuenow", "65%");
             $("#LARAVEL").css("width", "85%");
             $("#LARAVEL").attr("aria-valuenow", "85%");
+            $("#BOOSTRAP").css("width", "70%");
+            $("#BOOSTRAP").attr("aria-valuenow", "70%");
         });
 
     </script>
