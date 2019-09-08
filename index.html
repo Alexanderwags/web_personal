@@ -6,323 +6,263 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Material Design Bootstrap</title>
-  <link rel="stylesheet" type="text/css" href="estilos.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <title>Turbo-web</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="scss/styles.scss">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Script movimiento Scroll -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/scroll_lento.js"></script>
+  <!--fin de Script movimiento Scroll -->
+
+
 </head>
-  <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
-    <a class="navbar-brand" href="#">Turbo-web</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portafolio</a>
-        </li>
-        
-      </ul>
-    </div>
-  </nav>
-<body id="BODY">
-     
- <div id="vacio">
+
+   <header  class="portada" >
   
-   
-   <div class="container-fluid">
+       <div class="header" id="myHeader">
+            <div id="myNav" class="overlay">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div class="overlay-content">
+                 <a href="#sobre-mi">sobre mi</a>
+                 <a href="#">Servicios</a>
+                 <a href="#">Estudios</a>
+                 <a href="#">trabajos</a>
+                 <a href="#">Contacto</a>
+               </div>
+             </div>
 
-    <div class="row">
-      
-      <h1 class="text-center d-none d-md-block display-4 text-warning col-md-12 font-weight-bold w3-animate-zoom " >Hola Bienvenido </h1>
-        <h4 class="text-center d-block d-sm-none TITULOS  text-warning col-12 font-weight-bold w3-animate-zoom" >
-         Hola Bienvenido </h4>
+        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+             <div id="Menu-e" class="overlay-content">
+                 <a href="#sobre-mi">sobre mi</a>
+                 <a href="#">Servicios</a>
+                 <a href="#">Estudios</a>
+                 <a href="#">trabajos</a>
+                 <a href="#">Contacto</a>
+        </div>
+   
+        </div>
+      <div class="contenedor pt-n5">
+      <h1 class="portada-efecto">Efecto de máquina de escribir.<span>&#160;</span></h1>
+    </div>
+
+   </header>
+
+   
+
+   <style type="text/css">
+   
+        .contenedor {
+          margin: auto;
+          display: table;
+        }
+
+        .portada-efecto{ 
+          position: relative; 
+          float: left;
+          color: #fff;
+          font-size: 2.5em;
+        }
+
+        .portada-efecto span {
+            position:absolute;
+            right:0;
+            width:0;
+            background: #fff;
+            border-left: 1px solid #000;
+            animation: escribir 5s steps(30) infinite alternate;
+        }
+
+        @keyframes escribir {
+            from { width: 100% }
+            to { width:0 }
+        }
+
+   </style>
+    <body  style="z-index: -1;">
+
+
+  <!-- sobre mi  -->
+
+     <div class="container ">
        
-    </div>
-    <div class="row">
-      <h1 class="text-center d-none d-md-block display-4 text-primary col-md-12 font-weight-bold w3-animate-zoom" >Soy Desarrollador Web </h1>
-    
-      <h5 class="text-center d-block d-md-none TITULOS text-primary col-md-12 font-weight-bold w3-animate-zoom" >Soy Desarrollador Web </h5></div>
-    
-    </div>
-    
-    <div class="row">
-      <h1 class="text-center d-none d-md-block display-4 text-danger col-md-12 font-weight-bold w3-animate-zoom">Estudiante Universitario en La UNET (Venezuela) </h1>
-      <h6 class="text-center d-block d-md-none TITULOS text-danger col-md-12 font-weight-bold w3-animate-zoom">Estudiante Universitario en La UNET (Venezuela) </h6>
-    <div />
-    
-   </div>
-   
- </div>
-   <div class="row">
-    
-    <div class="col-12 d-none d-md-block">
-      <div class="text-center">
-         <img class=" rounded-circle" 
-         style="height: 200px; "src="imagenes/yo.jpg" >
-      </div>
-    </div>
-    <div class="col-12 d-block d-md-none">
-      <div class="text-center">
-         <img class=" rounded-circle" 
-         style="height: 100px; "src="imagenes/yo.jpg" >
-      </div>
-    </div>
-   </div>
-    
- <div id="contenedor">
-  <div id="apartado">
-    <div class="container-fluid bg-dark">
+         <div class="row">
+            <div class="order-1 col-12 col-md-4 mt-md-5 img-personal">
+               <img src="imagenes/yo.jpg" style="height: 300px;" class="rounded-circle">
+            </div>
+            <div id="sobre-mi" class="order-2  col-12 col-md-8 ">
+               
+                 <h1 class="text-center mt-3">Sobre mi</h1>
+                 <p class=" text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi culpa modi omnis quos voluptatibus nobis accusantium incidunt totam eveniet, ad quaerat voluptates odio qui, hic placeat eius adipisci officia!,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et harum, nam explicabo molestiae ab doloribus tempora quidem nihil aspernatur hic sapiente perspiciatis. Dolorum iusto et optio inventore laudantium dolores ipsum.</p>
+
+
+                 
+            </div>
+           <div class="order-4 order-md-3 col-md-8 info-uni">
+             
+              <h1 class="text-center text-dark ">Estudios</h1>
+              <p class=" text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro blanditiis esse, officia repudiandae? Neque cum ex accusamus praesentium molestiae veniam, corrupti obcaecati officia vitae reiciendis delectus aperiam recusandae perferendis, cupiditate eveniet, tenetur mollitia fuga a eius officiis. Molestiae distinctio consequatur ea aliquid, temporibus aut, quibusdam assumenda natus, numquam laborum incidunt est. Laboriosam nisi nemo, voluptate similique. Voluptates sequi quisquam natus perspiciatis consequuntur eligendi architecto sed, fugiat vitae hic. Accusantium nobis, non sapiente voluptatum ab, pariatur dicta magnam deserunt fuga, ipsam ut error cum debitis dolor enim. Magnam est iste soluta, dolore tenetur. Veritatis perspiciatis, quos magnam sint excepturi, est ad!
+              </p>
+           </div>
+            <div id="estudios" class="order-3 order-md-4 col-md-4 ">
+              
+              <div class="img-uni">
+                <img src="imagenes/unet-logo.gif">
+
+            </div>  
+        
+            </div>
+           
+           
+         </div>
+
+     </div>
       
-      <div class="row">
-        <div class="d-none d-md-block">
-           <h1>Desarrollo de  sitios WEB siguiendo las mejores prácticas de aprendisaje asegurando a nuestros clientes productos de calidad</h1>
-
-        </div>
-        <div class="d-block d-md-none">
-           <h5 class="w3-animate-zoom" style="color: white;">Desarrollo de  sitios WEB siguiendo las mejores prácticas de aprendisaje asegurando a nuestros clientes productos de calidad</h5>
-
-        </div>
-
-      </div>
-    </div>
-    <div class="container-fluid ">
+    <div class="container " style="padding: 0;">
       
-      <div class="row ">
-      <h3 class="text-center text-dark d-none  d-md-block col-md-12 display-4 w3-animate-zoom ">Habilidades En Lenguajes</h3>
-       <h1 class="text-center text-dark d-block d-sm-none col-12   w3-animate-zoom">Habilidades En Lenguajes</h1>
-    </div>
-  </div>
+  
+       <h1 class="text-center text-dark ">Habilidades En Lenguajes</h1>
 
-        <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-primary" id="CSS" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="CSS" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>CSS 75%</h4>
          </div>
        </div>
-     <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-dark" id="HTML" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+      <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="HTML" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>C++ 70%</h4>
          </div>
 
        </div>
        
-        <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-danger" id="HTML5" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active naranja progress-bar-striped" id="HTML5" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>HTML 85%</h4>
          </div>
        </div> 
-        <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-success" id="JAVASCRIPT" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 20%;" >
+        <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar active   naranja progress-bar-striped" id="JAVASCRIPT" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 20%;" >
            <h4>JAVASCRIPT  75%</h4>
          </div>
        </div>
 
-     <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom" id="php" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+      <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  naranja active progress-bar-striped" id="php" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>php 80%</h4>
          </div>
        </div>
-     <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-warning" id="JAVA" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+      <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="JAVA" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>JAVA 65%</h4>
          </div>
        </div> 
 
-  <div class="container-fluid ">
-      <div class="row "> 
 
-    <h3 class="text-center text-dark d-none d-md-block col-md-12 display-4 w3-animate-zoom">Manejo de Frameworks</h3>
-    <h1 class="text-center text-dark d-block d-sm-none col-12  w3-animate-zoom">Manejo de Frameworks</h1>
+
     </div>
-  </div> 
-        <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-warning" id="LARAVEL" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+
+       
+
+  <div class="container mt-5 mb-5" style="padding: 0;">
+  
+
+    
+    <h1 class="text-center text-dark">Manejo de Frameworks</h1>
+     
+       <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="LARAVEL" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>LARAVEL 85%</h4>
          </div>
        </div> 
-        <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-danger" id="BOOSTRAP" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+        <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="BOOSTRAP" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>BOOSTRAP 70%</h4>
          </div>
        </div> 
-         <div class="progress" style="height:26px">
-         <div class="progress-bar progress-bar-striped active w3-animate-zoom bg-primary" id="ANGULAR" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
+         <div class="progress mb-1" style="height:26px">
+         <div class="progress-bar  active  naranja progress-bar-striped" id="ANGULAR" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width: 10%;" >
            <h4>Angular 30%</h4>
          </div>
        </div>
 
-  </div>
-         
- 
 
- </body>
-  </div id="portafolio">  
-      
-      
-      
-      <div class="container-fluid">
-          <div class="row">
-            
-            <h1 class="text-center display-2 text-dark  d-none d-md-block f col-md-12 w3-animate-zoom" >Portafolio</h1>
-         
-            <h1 class="text-center  text-dark  d-block d-md-none col-md-12 w3-animate-zoom" >Portafolio</h1>
-         
-        </div>
-        <div class="row">
-          
-          <div class="card col-12 col-md-4" style="width: 18rem;">
-    <a href="http://ojoblanco.5gbfree.com/"><img class="card-img-top" src="imagenes/creaciones.png" alt="Card image cap"></a>
-    <div class="card-body">
-      <p class="card-text">Creaciones Isamar 2012 </p>
-    </div>
-  </div>
-
-          <div class="card col-12 col-md-4" style="width: 18rem;">
-    <a href="https://creacionesisamar2012.000webhostapp.com/"><img class="card-img-top" src="imagenes/sistemas-deportivos.png" alt="Card image cap"></a>
-    <div class="card-body">
-      <p class="card-text">sistemas deportivos</p>
-    </div>
-  </div>
-       
-        
- <div class="card col-12 col-md-4" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/proximamente.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-         
-
-       </div>
-  
-      </div>
-  
-     
-  </div>
-  <!-- Footer -->
-<footer class="page-footer font-small bg-dark  ">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-1">
-        <div class=" flex-center">
-
-          <!-- Facebook -->
-          <a class="fb-ic" href="https://www.facebook.com/alexander.gutierrez.735">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-          
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-          </a>
-           <a class="ins-ic " href="https://github.com/alexanderwags">
-            <i class="fab fa-github mr-md-5 mr-3 fa-2x"></i>
-             <a />
-        </div>
-        <div class="footer-copyright text-center bg-dark ">© 2019 Turbo-web
-            
-          </div>
-        
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
    
+  </div> 
+   <!-- Portafolio -->   
+  <div class="container-fluid portafolio azul " >
+    <h1 class="text-center text-white">Portafolio</h1>
+      <div class="container row bg-dark m-0 p-0">
+           
+           
+       
+               
+
+             <div class="col-12 col-md-6 portafolio-gall ">
+               
+                       
+             
+             </div>  
+               <div class="col-12 col-md-6 portafolio-gall mt-5 ">
+               
+                  
+             </div>  
+              <div class="col-12 col-md-6 portafolio-gall mt-5">
+               
+                       
+
+             </div> 
+              <div class="col-12 col-md-6 portafolio-gall  ">
+                
+                       
+                
+             </div>   
+
+      </div>  
+
   </div>
-  <!-- Footer Elements -->
-
   
 
-</footer>
-<!-- Footer -->
-  <!-- Start your project here-->
+         
+     
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
 
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="dist/aos.js"></script>
 
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script>
-
-        $(document).ready(function() {
-            $("#php").css("width", "80%");
-            $("#php").attr("aria-valuenow", "80%");
-            $("#HTML").css("width", "70%");
-            $("#HTML").attr("aria-valuenow", "70%");
-            $("#HTML5").css("width", "85%");
-            $("#HTML5").attr("aria-valuenow", "85%");
-            $("#CSS").css("width", "75%");
-            $("#CSS").attr("aria-valuenow", "75%");
-            $("#JAVASCRIPT").css("width", "75%");
-            $("#JAVASCRIPT").attr("aria-valuenow", "75%");
-            $("#JAVA").css("width", "65%");
-            $("#JAVA").attr("aria-valuenow", "65%");
-            $("#LARAVEL").css("width", "85%");
-            $("#LARAVEL").attr("aria-valuenow", "85%");
-            $("#BOOSTRAP").css("width", "70%");
-            $("#BOOSTRAP").attr("aria-valuenow", "70%");
-            $("#ANGULAR").css("width", "30%");
-            $("#ANGULAR").attr("aria-valuenow", "30%");
-        });
-
+    <script>
+      AOS.init({
+        offset: 120,
+         delay: 500,
+        duration: 400,
+        easing: 'ease'
+      });
     </script>
-    <style type="text/css">
-        
-        #php,#HTML,#CSS,#JAVASCRIPT,#JAVA,#LARAVEL,#HTML5,#BOOSTRAP,#ANGULAR{
-          
-          transition: all 10s ease;
-        }
-    </style>
+   <script src="js/power.js"></script>
+
+
+   
   
-    
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+ 
+  <footer style="display:block;">
+   
+    <p class="text-center bg-success m-0">Desarrollado por @William.ws7 </p>
+  </footer>
+
 
 
 </html>

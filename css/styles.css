@@ -1,0 +1,309 @@
+h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portada {
+  background-image: url(../imagenes/portada-1.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .portada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.azul {
+  background-color: #094293 !important;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
+}
+
+.azul-text {
+  color: #094293;
+}
+
+.naranja {
+  background-color: #EA512F !important;
+}
+
+.header {
+  padding: 10px 16px;
+  color: #f1f1f1;
+  z-index: 3;
+}
+
+@media (min-width: 992px) {
+  .header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #EA512F;
+  /* Black w/opacity */
+  opacity: 0.9;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+.overlay a:hover {
+  text-decoration: none;
+  color: black !important;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#estudios {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info-uni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#sobre-mi {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.img-personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .header #myNav {
+    display: none;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header #Menu-e {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .header #myNav {
+    display: block;
+  }
+  .header .menu {
+    display: block;
+  }
+  .header #Menu-e {
+    display: none;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#php, #HTML, #CSS, #JAVASCRIPT, #JAVA, #LARAVEL, #HTML5, #BOOSTRAP, #ANGULAR {
+  -webkit-transition: all 10s ease;
+  -o-transition: all 10s ease;
+  transition: all 10s ease;
+}
+
+#Menu-e {
+  width: 1000px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#Menu-e a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#Menu-e a:hover {
+  color: black;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.portafolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portafolio .portafolio-gall {
+  background-image: url(../imagenes/creaciones.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 350px;
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=styles.css.map */
