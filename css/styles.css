@@ -96,7 +96,6 @@ p {
   top: 0;
   background-color: #EA512F;
   /* Black w/opacity */
-  opacity: 0.9;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   -webkit-transition: 0.5s;
@@ -151,6 +150,10 @@ p {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+  background-color: #EA512F !important;
 }
 
 #estudios {
@@ -298,12 +301,55 @@ p {
 }
 
 .portafolio .portafolio-gall {
-  background-image: url(../imagenes/creaciones.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   height: 350px;
-  background-color: #ccc;
+  -webkit-transition: 2s !important;
+  -o-transition: 2s !important;
+  transition: 2s !important;
+}
+
+.portafolio .portafolio-gall a {
+  display: block;
+  -webkit-transition: 2s !important;
+  -o-transition: 2s !important;
+  transition: 2s !important;
+}
+
+.portafolio .portafolio-gall a img {
+  -webkit-transition: 2s !important;
+  -o-transition: 2s !important;
+  transition: 2s !important;
+  height: 350px !important;
+}
+
+@media (min-width: 768px) {
+  .portafolio .portafolio-gall a:hover {
+    width: 100% !important;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center !important;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .portafolio .portafolio-gall a:hover img {
+    width: 80% !important;
+    height: 350px !important;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+  }
+}
+
+.centrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

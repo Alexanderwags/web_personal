@@ -70,7 +70,6 @@ p{
   left: 0;
   top: 0;
   background-color: #EA512F; /* Black w/opacity */
-  opacity: 0.9;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -112,6 +111,11 @@ p{
   top: 20px;
   right: 45px;
   font-size: 60px;
+
+}
+.overlay .closebtn:hover{
+  background-color: #EA512F!important;
+  
 }
 #estudios{
 
@@ -212,14 +216,40 @@ p{
      flex-direction:column;
      align-items: center;
     .portafolio-gall{
-        background-image: url(../imagenes/creaciones.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center center;
-        
-        
+  
         height: 350px;
-        background-color: #ccc;
+        transition:2s!important;
+        a{
+          display: block;
+          transition:2s!important;
+          img{
+            transition:2s!important;
+            height: 350px!important;
+          }
+        }
 
+        @media (min-width:768px ){
+            a:hover{
+               width: 100%!important;
+              // background-color: #094293!important;
+               transition:1s;
+               text-align: center!important;
+               display: block;
+               margin-bottom: 5px;
+                img{
+                    width: 80%!important;
+                    height: 350px!important;
+                    transition:1s;
+                }
+
+            }
+         }
+      
     }
+}
+.centrar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
