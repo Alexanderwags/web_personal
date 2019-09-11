@@ -49,7 +49,7 @@
    
         </div>
       <div class="contenedor pt-n5">
-      <h1 class="portada-efecto">Efecto de máquina de escribir.<span>&#160;</span></h1>
+      <h1 class="animation text-white">Efecto de máquina de escribir.<span>&#160;</span></h1>
     </div>
 
    </header>
@@ -57,33 +57,29 @@
    
 
    <style type="text/css">
-   
-        .contenedor {
-          margin: auto;
-          display: table;
-        }
+      .animation{
+        
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: maquina;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes maquina{
 
-        .portada-efecto{ 
-          position: relative; 
-          float: left;
-          color: #fff;
-          font-size: 2.5em;
+        from{
+             width: 0px;
+             transform: scale(1);
         }
-
-        .portada-efecto span {
-            position:absolute;
-            right:0;
-            width:0;
-            background: #fff;
-            border-left: 1px solid #000;
-            animation: escribir 5s steps(30) infinite alternate;
+        to{
+          width: 400px;
+          transform: scale(1.05);
         }
-
-        @keyframes escribir {
-            from { width: 100% }
-            to { width:0 }
-        }
-
+    } 
+        
    </style>
     <body  style="z-index: -1;">
 
