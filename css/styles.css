@@ -186,11 +186,11 @@ p {
 }
 @media (max-width: 575px) {
   .portada.efectos-rayas-1 {
-    height: 350px;
+    height: 450px;
     position: relative;
   }
   .portada.efectos-rayas-1 .img-fondo {
-    height: 350px;
+    height: 450px;
   }
   .portada.efectos-rayas-1 .contenedor {
     width: 200px;
