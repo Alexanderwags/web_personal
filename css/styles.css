@@ -87,8 +87,8 @@ p {
   .info-port {
     background-color: #0672a2;
     min-width: 200px;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     z-index: 2;
     padding: 3%;
     display: -webkit-box;
@@ -111,14 +111,18 @@ p {
   .info-port h1 {
     position: absolute;
     top: 0;
+  }
+  .info-port .info-port-2 {
+    width: 270px;
+    height: 270px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .info-port {
     background-color: #0672a2;
     min-width: 200px;
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 330px;
     z-index: 2;
     padding: 3%;
     display: -webkit-box;
@@ -136,21 +140,21 @@ p {
             flex-direction: column;
     text-align: center;
     margin-left: 150px;
-    position: relative;
+    position: absolute;
+    right: 0;
   }
   .info-port h1 {
     position: absolute;
     top: 0;
   }
+  .info-port .info-port-2 {
+    width: 260px;
+    margin: 0;
+  }
 
   .info-port.gmd-3 {
     -webkit-box-shadow: unset;
             box-shadow: unset;
-  }
-
-  .info-port-2 {
-    width: 200px;
-    margin: 0;
   }
 
   .contenedor {
@@ -180,8 +184,47 @@ p {
     background-position: center center;
   }
 
-  .container-fluid.efecto-rayas, .container-fluid.efecto-rayas:before {
-    height: 1200px;
+  .efecto-rayas {
+    height: auto !important;
+  }
+
+  .efecto-rayas:before {
+    -webkit-clip-path: circle(50% at 0 50%) !important;
+            clip-path: circle(50% at 0 50%) !important;
+  }
+
+  .efecto-rayas-3 {
+    height: auto !important;
+  }
+
+  .efecto-rayas-3:before {
+    -webkit-clip-path: circle(50% at 100% 50%) !important;
+            clip-path: circle(50% at 100% 50%) !important;
+  }
+
+  .efectos-rayas-1:before {
+    -webkit-clip-path: ellipse(67% 96% at 99% 3%) !important;
+            clip-path: ellipse(67% 96% at 99% 3%) !important;
+  }
+}
+@media (max-width: 991px) {
+  .info-desa .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .info-desa .row img {
+    width: 90%;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 @media (max-width: 479px) {
@@ -211,6 +254,7 @@ p {
     position: absolute;
     bottom: 0;
     right: 0px;
+    border-radius: 50%;
   }
   .portada.efectos-rayas-1 .contenedor .info-port.gmd-3 {
     width: 180px;
@@ -228,7 +272,7 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 300px;
+    height: 350px;
     -webkit-box-shadow: unset;
             box-shadow: unset;
     overflow: hidden;
@@ -240,10 +284,10 @@ p {
   }
   .portada.efectos-rayas-1 .contenedor .info-port.gmd-3 .info-port-2 {
     margin: 0;
-    height: 150px;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
     width: 100%;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 39% 76%, 0% 75%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 39% 76%, 0% 75%);
   }
   .portada.efectos-rayas-1 .contenedor .info-port.gmd-3 .info-port-2 h4 {
     font-size: 1rem;
@@ -253,11 +297,37 @@ p {
     height: 80px;
   }
 
-  .container-fluid.efecto-rayas, .container-fluid.efecto-rayas:before {
-    height: 2000px;
+  .efecto-rayas {
+    height: auto !important;
+  }
+
+  .efecto-rayas:before {
+    -webkit-clip-path: circle(50% at 11% 50%) !important;
+            clip-path: circle(50% at 11% 50%) !important;
+  }
+
+  .efecto-rayas-3 {
+    height: auto !important;
+  }
+
+  .efecto-rayas-3:before {
+    -webkit-clip-path: circle(50% at 100% 50%) !important;
+            clip-path: circle(50% at 100% 50%) !important;
+  }
+
+  .efectos-rayas-1:before {
+    -webkit-clip-path: ellipse(65% 100% at 100% 0%) !important;
+            clip-path: ellipse(65% 100% at 100% 0%) !important;
+    height: 450px !important;
   }
 }
 @media (min-width: 480px) and (max-width: 575px) {
+  .efectos-rayas-1:before {
+    -webkit-clip-path: ellipse(65% 100% at 100% 0%) !important;
+            clip-path: ellipse(65% 100% at 100% 0%) !important;
+    height: 450px !important;
+  }
+
   .portada.efectos-rayas-1 {
     height: 450px;
     position: relative;
@@ -284,6 +354,9 @@ p {
     position: absolute;
     bottom: 0;
     right: 0px;
+    border-radius: 50%;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
   }
   .portada.efectos-rayas-1 .contenedor .info-port.gmd-3 {
     width: 260px;
@@ -315,8 +388,6 @@ p {
     margin: 0;
     height: 150px;
     width: 100%;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 39% 76%, 0% 75%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 39% 76%, 0% 75%);
   }
   .portada.efectos-rayas-1 .contenedor .info-port.gmd-3 .info-port-2 h4 {
     font-size: 1rem;
@@ -327,8 +398,22 @@ p {
     width: 150px;
   }
 
-  .container-fluid.efecto-rayas, .container-fluid.efecto-rayas:before {
-    height: 2000px;
+  .efecto-rayas {
+    height: auto !important;
+  }
+
+  .efecto-rayas:before {
+    -webkit-clip-path: circle(50% at 11% 50%) !important;
+            clip-path: circle(50% at 11% 50%) !important;
+  }
+
+  .efecto-rayas-3 {
+    height: auto !important;
+  }
+
+  .efecto-rayas-3:before {
+    -webkit-clip-path: circle(50% at 100% 50%) !important;
+            clip-path: circle(50% at 100% 50%) !important;
   }
 }
 .img-portada {
@@ -1114,5 +1199,9 @@ h1 {
 }
 .info-desa img {
   height: 400px;
+}
+
+.text-azul {
+  color: #0672a2;
 }
 /*# sourceMappingURL=styles.css.map */
