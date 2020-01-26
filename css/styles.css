@@ -6,6 +6,16 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+.letra {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.texto-best {
+  padding: 5%;
+}
+
 .portada {
   background: white;
   height: 700px;
@@ -1203,5 +1213,63 @@ h1 {
 
 .text-azul {
   color: #0672a2;
+}
+
+.portafolio-gall {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portafolio-gall .boton {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 60px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.portafolio-gall .boton:hover {
+  border: 1px solid white;
+  text-decoration: none;
+  background: #499bea;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portafolio-gall:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.bg-azull {
+  background: #499bea;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #499bea), color-stop(100%, #00affe));
+  background: -o-linear-gradient(left, #499bea 0%, #00affe 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#499bea), to(#00affe));
+  background: linear-gradient(to right, #499bea 0%, #00affe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#499bea", endColorstr="#00affe", GradientType=1 );
 }
 /*# sourceMappingURL=styles.css.map */
