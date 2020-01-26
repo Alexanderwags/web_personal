@@ -135,7 +135,7 @@ p{
           }
 
   }
-  @media (max-width: 575px){
+  @media (max-width: 479px){
        
        .portada.efectos-rayas-1{
             height: 450px;
@@ -189,6 +189,69 @@ p{
             }
           
        }
+        .container-fluid.efecto-rayas,.container-fluid.efecto-rayas:before{
+            height: 2000px;
+          }
+      
+  }
+   @media (min-width: 480px) and (max-width: 575px){
+       
+       .portada.efectos-rayas-1{
+            height: 450px;
+            .img-fondo{
+                height: 450px;
+            }
+            position: relative;
+
+            .contenedor{
+                width:330px;
+                    background: #0086c2;
+                     display: flex;
+          align-items: center;
+          justify-content: center;
+           flex-direction:column;
+               position: absolute;
+            bottom: 0;
+            right: 0px;
+               .info-port.gmd-3{
+                  width: 260px;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center; 
+                  height: 300px; 
+                  box-shadow: unset;
+                  overflow: hidden;
+                  h1{
+                    font-size: 1.3rem;
+                    width: 200px;
+                    margin-left: 200px;
+
+                  }
+                  .info-port-2{
+                    margin: 0;
+                    height: 150px;
+                    width: 100%;
+                   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 60% 100%, 39% 76%, 0% 75%);
+                    h4{
+                      font-size: 1rem;
+                    }
+
+                  }
+                  
+                  .img-portada{
+                    position: relative;
+                    height: 100px;
+                    width: 150px;
+                  }
+               }
+            }
+          
+       }
+        .container-fluid.efecto-rayas,.container-fluid.efecto-rayas:before{
+            height: 2000px;
+          }
       
   }
 .img-portada{
@@ -201,13 +264,11 @@ p{
 .info-port-2{
    
        display: flex;
-   
+   align-items: center;
     justify-content: center;
-    width: 240px;
-    height: 240px;
-    margin-left: -208px;
-    margin-top: -30px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 100% 100%, 43% 75%, 0% 75%); 
+    width: 350px;
+    height: 300px;
+   
     h4{
       color: #0672a2;
     font-weight: bold;
@@ -227,13 +288,22 @@ p{
 }
 .efecto-rayas:before{
   content: '';
-     background: #00affe;
+     //background: #00affe;
+           background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,175,254,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00affe', GradientType=1 );
+        
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 800px;
- clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+     clip-path: circle(70.0% at 0 100%);
 
 
 }
@@ -248,14 +318,22 @@ p{
 }
 .efectos-rayas-1:before{
     content: '';
-        background: #00affe;
+       // background: #00affe;
+        background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,175,254,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00affe', GradientType=1 );
         position: absolute;
         top: 0;
         right: 0;
 
         width: 100%;
      height: 700px;
-clip-path: polygon(21% 0, 90% 0, 100% 100%, 25% 100%)
+clip-path: circle(50% at 65% 16%);
 
 
 }
@@ -265,17 +343,27 @@ clip-path: polygon(21% 0, 90% 0, 100% 100%, 25% 100%)
    display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 800px;
 }
+
 .efecto-rayas-3:before{
   content: '';
-     background: #00affe;
+     //background: #00affe;
+       background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,175,254,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(0,175,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00affe', GradientType=1 );
+       
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
-     height: 450px;
- clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+     height: 800px;
+     clip-path: circle(70.0% at 0 0);
 
 
 
@@ -509,41 +597,193 @@ clip-path: polygon(21% 0, 90% 0, 100% 100%, 25% 100%)
      justify-content: center;
      flex-direction:column;
      align-items: center;
-    .portafolio-gall{
-  
-        height: 350px;
-        transition:2s!important;
-        a{
-          display: block;
-          transition:2s!important;
-          img{
-            transition:2s!important;
-            height: 350px!important;
-          }
-        }
 
-        @media (min-width:768px ){
-            a:hover{
-               width: 100%!important;
-              // background-color: #094293!important;
-               transition:1s;
-               text-align: center!important;
-               display: block;
-               margin-bottom: 5px;
-                img{
-                    width: 80%!important;
-                    height: 350px!important;
-                    transition:1s;
-                }
-
-            }
-         }
-      
-    }
+     .portafolio-gall{
+      height: 400px;
+      img{
+        height: 400px;
+      }
+     }
 }
 .centrar{
     
     display: flex;
     align-items: center;
     justify-content: center;
+}
+body {
+  background: #000;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.circular-progress {
+  position: relative;
+  margin: auto;
+  &,
+  &:before,
+  &:after {
+     width: 12rem;
+     height: 12rem;
+     border-radius: 50%;
+  }
+  
+  &:before,
+  &:after {
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-align: center;
+  }
+  
+  &:before {
+    line-height: 8rem;
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+  }
+  
+  &:after {
+    line-height: 13rem;
+  }
+
+}
+
+@function progress ($percent){
+  $deg: $percent/100 * 180;
+  @return #{$deg}deg;
+}
+
+@mixin circular-progress($percent,$skill,$color,$bgcolor){
+  $progress: progress($percent);
+  background: linear-gradient(
+               0deg,
+               $color 50%,
+               rgba($color, .2) 50%
+  );
+  transform: rotate($progress);
+  
+  &:before,
+  &:after {
+     color: $color;
+  }
+  
+  &:before {
+    content: "#{$skill}";
+    background: $bgcolor content-box;
+    transform: rotate(-#{$progress});
+    text-transform: uppercase;
+  }
+  
+  &:after {
+    content: "#{$percent}%";
+    background: linear-gradient(
+                transparent 50%,
+                $bgcolor 50%
+    );
+    transform: scale(1.1)  rotate(-#{$progress});
+  }
+}
+
+.html5 {
+  @include circular-progress(
+    80,
+    html5,
+    black,
+    tomato
+    )
+}
+
+.css3 {
+  @include circular-progress(
+    85,
+    css3,
+    white,
+    #0672a2
+    )
+}
+
+.jscript {
+  @include circular-progress(
+    75,
+    js,
+    black,
+    
+    orange
+    )
+}
+.php {
+  @include circular-progress(
+    70,
+    php,
+    black,
+    rgb(128, 136, 199)
+    )
+}
+.react {
+  @include circular-progress(
+    55,
+    react js,
+    black,
+    #0672a2
+    )
+}
+.laravel {
+  @include circular-progress(
+    70,
+    Laravel,
+    black,
+    tomato
+    )
+}
+.java {
+  @include circular-progress(
+    60,
+    java,
+    white,
+    #bf1d1d
+    )
+}
+.c {
+  @include circular-progress(
+    60,
+    c,
+    white,
+     #0672a2
+    )
+}
+.boostrap {
+  @include circular-progress(
+    85,
+    Boostrap,
+    black,
+    purple
+    )
+}
+.efecto-rayas-3{
+  height: auto;
+}
+.skills {
+  display: flex;
+  margin-top: 4em;
+  flex-wrap: wrap;
+}
+.info-desa{
+  height: auto;
+  .col-12{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .info-web{
+        max-width: 600px;
+        width: 90%;
+      }
+  }
+   img{
+      height: 400px;
+   }
 }
