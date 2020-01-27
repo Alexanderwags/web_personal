@@ -846,23 +846,16 @@ h1 {
     
     }
 .poderes{
-  height: 350px;
-  width: 350px;
-  background: rgba(242,246,248,1);
-background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(50%, rgba(216,225,231,1)), color-stop(51%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
-background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
-background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
-background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
-background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+  height: 320px;
+  width: 320px;    
+  border: 7px outset white;
 }
 .rotacion {
         width: 350px;
         overflow: hidden;
         white-space: nowrap;
         animation-name: rotar;
-        animation-duration: 6s;
+        animation-duration: 30s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate;
@@ -871,10 +864,145 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
     @keyframes rotar {
         from {
                transform: rotateZ(0deg);
-               transform: translateY(0px);
+
         }
         to {
                transform: rotateZ(360deg);
-                transform: translateY(300px);
         }
     }
+    .posicion {
+        width: 350px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: rotarr;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes rotarr {
+        from {
+               transform: rotateZ(0deg);
+
+        }
+        to {
+               transform: rotateZ(-360deg);
+        }
+    }
+.portafolio{
+  overflow: hidden;
+    .text-port{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       color: white;
+    }
+}
+.portafolio-mio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+        .rueda{
+        max-width: 600px;
+        max-height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .gal-1{
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 150px;
+            z-index: 1;
+            img{
+                 min-height:150px;
+               height: 100%;
+            }
+        }
+        .gal-2{
+            position: absolute;
+            bottom: 0;
+            width: 250px;
+            height: 150px;
+            img{
+                 min-height: 150px;
+               height: 100%;
+            }
+        }
+        .gal-3{
+            position: absolute;
+            right: 0;
+            width: 250px;
+            height: 150px;
+            img{
+                 min-height: 150px;
+               height: 100%;
+            }
+        }
+        .gal-4{
+            position: absolute;
+            left: 0;
+            width: 250px;
+            height: 150px;
+            img{
+               min-height: 150px;
+               height: 100%;
+            }
+        }
+      }
+  
+}
+
+.rueda .gal-1{
+    transition: 3s;
+}
+.rueda .gal-1:hover{
+     
+     
+}
+.gal-11{
+    transition: 3s;
+   margin-bottom:1500px;
+}
+.rueda .gal-1:hover + .gal-11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+        height: inherit;
+     transition: 1s;
+     
+     z-index: -1;
+     margin: 0;
+     a{
+       height: 100%;
+        img{
+          height: 100%;
+        }
+     }
+} 
+
+
+.centrar{
+
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width: 992px){
+   .port-movil{
+     display: none;
+   }
+}
+@media(max-width: 991px){
+   
+   .portafolio{
+    display: none;
+   }
+}
