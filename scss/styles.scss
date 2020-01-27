@@ -707,149 +707,6 @@ h1 {
   text-align: center;
 }
 
-.circular-progress {
-  position: relative;
-  margin: auto;
-  &,
-  &:before,
-  &:after {
-     width: 12rem;
-     height: 12rem;
-     border-radius: 50%;
-  }
-  
-  &:before,
-  &:after {
-     position: absolute;
-     top: 0;
-     left: 0;
-     text-align: center;
-  }
-  
-  &:before {
-    line-height: 8rem;
-    padding: .5em;
-    box-sizing: border-box;
-    font-size: 1.8rem;
-  }
-  
-  &:after {
-    line-height: 13rem;
-  }
-
-}
-
-@function progress ($percent){
-  $deg: $percent/100 * 180;
-  @return #{$deg}deg;
-}
-
-@mixin circular-progress($percent,$skill,$color,$bgcolor){
-  $progress: progress($percent);
-  background: linear-gradient(
-               0deg,
-               $color 50%,
-               rgba($color, .2) 50%
-  );
-  transform: rotate($progress);
-  
-  &:before,
-  &:after {
-     color: $color;
-  }
-  
-  &:before {
-    content: "#{$skill}";
-    background: $bgcolor content-box;
-    transform: rotate(-#{$progress});
-    text-transform: uppercase;
-  }
-  
-  &:after {
-    content: "#{$percent}%";
-    background: linear-gradient(
-                transparent 50%,
-                $bgcolor 50%
-    );
-    transform: scale(1.1)  rotate(-#{$progress});
-  }
-}
-
-.html5 {
-  @include circular-progress(
-    80,
-    html5,
-    black,
-    tomato
-    )
-}
-
-.css3 {
-  @include circular-progress(
-    85,
-    css3,
-    white,
-    #0672a2
-    )
-}
-
-.jscript {
-  @include circular-progress(
-    75,
-    js,
-    black,
-    
-    orange
-    )
-}
-.php {
-  @include circular-progress(
-    70,
-    php,
-    black,
-    rgb(128, 136, 199)
-    )
-}
-.react {
-  @include circular-progress(
-    55,
-    react js,
-    black,
-    #0672a2
-    )
-}
-.laravel {
-  @include circular-progress(
-    70,
-    Laravel,
-    black,
-    tomato
-    )
-}
-.java {
-  @include circular-progress(
-    60,
-    java,
-    white,
-    #bf1d1d
-    )
-}
-.c {
-  @include circular-progress(
-    60,
-    c,
-    white,
-     #0672a2
-    )
-}
-.boostrap {
-  @include circular-progress(
-    85,
-    Boostrap,
-    black,
-    purple
-    )
-}
 .efecto-rayas-3{
   height: auto;
 }
@@ -867,11 +724,12 @@ h1 {
       flex-direction: column;
       .info-web{
         max-width: 600px;
-        width: 90%;
+        width: 100%;
       }
   }
    img{
       height: 400px;
+      width: 100%;
    }
 }
 .text-azul{
@@ -924,3 +782,21 @@ h1 {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#00affe', GradientType=1 );
               
   }
+  .hab-len{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 50%;
+      border:5px solid white;
+      max-width: 350px;
+      width: 100%;
+      height: 350px;
+      background: white;
+     .img-len{
+      height: 200px;
+      
+
+    }
+  }
+  

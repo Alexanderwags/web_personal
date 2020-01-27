@@ -885,293 +885,6 @@ h1 {
   text-align: center;
 }
 
-.circular-progress {
-  position: relative;
-  margin: auto;
-}
-.circular-progress, .circular-progress:before, .circular-progress:after {
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-}
-.circular-progress:before, .circular-progress:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-.circular-progress:before {
-  line-height: 8rem;
-  padding: 0.5em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1.8rem;
-}
-.circular-progress:after {
-  line-height: 13rem;
-}
-
-.html5 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(144deg);
-      -ms-transform: rotate(144deg);
-          transform: rotate(144deg);
-}
-.html5:before, .html5:after {
-  color: black;
-}
-.html5:before {
-  content: "html5";
-  background: tomato content-box;
-  -webkit-transform: rotate(-144deg);
-      -ms-transform: rotate(-144deg);
-          transform: rotate(-144deg);
-  text-transform: uppercase;
-}
-.html5:after {
-  content: "80%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, tomato));
-  background: -o-linear-gradient(transparent 50%, tomato 50%);
-  background: linear-gradient(transparent 50%, tomato 50%);
-  -webkit-transform: scale(1.1) rotate(-144deg);
-      -ms-transform: scale(1.1) rotate(-144deg);
-          transform: scale(1.1) rotate(-144deg);
-}
-
-.css3 {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, rgba(255, 255, 255, 0.2)));
-  background: -o-linear-gradient(bottom, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  background: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  -webkit-transform: rotate(153deg);
-      -ms-transform: rotate(153deg);
-          transform: rotate(153deg);
-}
-.css3:before, .css3:after {
-  color: white;
-}
-.css3:before {
-  content: "css3";
-  background: #0672a2 content-box;
-  -webkit-transform: rotate(-153deg);
-      -ms-transform: rotate(-153deg);
-          transform: rotate(-153deg);
-  text-transform: uppercase;
-}
-.css3:after {
-  content: "85%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #0672a2));
-  background: -o-linear-gradient(transparent 50%, #0672a2 50%);
-  background: linear-gradient(transparent 50%, #0672a2 50%);
-  -webkit-transform: scale(1.1) rotate(-153deg);
-      -ms-transform: scale(1.1) rotate(-153deg);
-          transform: scale(1.1) rotate(-153deg);
-}
-
-.jscript {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-.jscript:before, .jscript:after {
-  color: black;
-}
-.jscript:before {
-  content: "js";
-  background: orange content-box;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-  text-transform: uppercase;
-}
-.jscript:after {
-  content: "75%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, orange));
-  background: -o-linear-gradient(transparent 50%, orange 50%);
-  background: linear-gradient(transparent 50%, orange 50%);
-  -webkit-transform: scale(1.1) rotate(-135deg);
-      -ms-transform: scale(1.1) rotate(-135deg);
-          transform: scale(1.1) rotate(-135deg);
-}
-
-.php {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(126deg);
-      -ms-transform: rotate(126deg);
-          transform: rotate(126deg);
-}
-.php:before, .php:after {
-  color: black;
-}
-.php:before {
-  content: "php";
-  background: #8088c7 content-box;
-  -webkit-transform: rotate(-126deg);
-      -ms-transform: rotate(-126deg);
-          transform: rotate(-126deg);
-  text-transform: uppercase;
-}
-.php:after {
-  content: "70%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #8088c7));
-  background: -o-linear-gradient(transparent 50%, #8088c7 50%);
-  background: linear-gradient(transparent 50%, #8088c7 50%);
-  -webkit-transform: scale(1.1) rotate(-126deg);
-      -ms-transform: scale(1.1) rotate(-126deg);
-          transform: scale(1.1) rotate(-126deg);
-}
-
-.react {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(99deg);
-      -ms-transform: rotate(99deg);
-          transform: rotate(99deg);
-}
-.react:before, .react:after {
-  color: black;
-}
-.react:before {
-  content: "react js";
-  background: #0672a2 content-box;
-  -webkit-transform: rotate(-99deg);
-      -ms-transform: rotate(-99deg);
-          transform: rotate(-99deg);
-  text-transform: uppercase;
-}
-.react:after {
-  content: "55%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #0672a2));
-  background: -o-linear-gradient(transparent 50%, #0672a2 50%);
-  background: linear-gradient(transparent 50%, #0672a2 50%);
-  -webkit-transform: scale(1.1) rotate(-99deg);
-      -ms-transform: scale(1.1) rotate(-99deg);
-          transform: scale(1.1) rotate(-99deg);
-}
-
-.laravel {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(126deg);
-      -ms-transform: rotate(126deg);
-          transform: rotate(126deg);
-}
-.laravel:before, .laravel:after {
-  color: black;
-}
-.laravel:before {
-  content: "Laravel";
-  background: tomato content-box;
-  -webkit-transform: rotate(-126deg);
-      -ms-transform: rotate(-126deg);
-          transform: rotate(-126deg);
-  text-transform: uppercase;
-}
-.laravel:after {
-  content: "70%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, tomato));
-  background: -o-linear-gradient(transparent 50%, tomato 50%);
-  background: linear-gradient(transparent 50%, tomato 50%);
-  -webkit-transform: scale(1.1) rotate(-126deg);
-      -ms-transform: scale(1.1) rotate(-126deg);
-          transform: scale(1.1) rotate(-126deg);
-}
-
-.java {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, rgba(255, 255, 255, 0.2)));
-  background: -o-linear-gradient(bottom, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  background: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  -webkit-transform: rotate(108deg);
-      -ms-transform: rotate(108deg);
-          transform: rotate(108deg);
-}
-.java:before, .java:after {
-  color: white;
-}
-.java:before {
-  content: "java";
-  background: #bf1d1d content-box;
-  -webkit-transform: rotate(-108deg);
-      -ms-transform: rotate(-108deg);
-          transform: rotate(-108deg);
-  text-transform: uppercase;
-}
-.java:after {
-  content: "60%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #bf1d1d));
-  background: -o-linear-gradient(transparent 50%, #bf1d1d 50%);
-  background: linear-gradient(transparent 50%, #bf1d1d 50%);
-  -webkit-transform: scale(1.1) rotate(-108deg);
-      -ms-transform: scale(1.1) rotate(-108deg);
-          transform: scale(1.1) rotate(-108deg);
-}
-
-.c {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, rgba(255, 255, 255, 0.2)));
-  background: -o-linear-gradient(bottom, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  background: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0.2) 50%);
-  -webkit-transform: rotate(108deg);
-      -ms-transform: rotate(108deg);
-          transform: rotate(108deg);
-}
-.c:before, .c:after {
-  color: white;
-}
-.c:before {
-  content: "c";
-  background: #0672a2 content-box;
-  -webkit-transform: rotate(-108deg);
-      -ms-transform: rotate(-108deg);
-          transform: rotate(-108deg);
-  text-transform: uppercase;
-}
-.c:after {
-  content: "60%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #0672a2));
-  background: -o-linear-gradient(transparent 50%, #0672a2 50%);
-  background: linear-gradient(transparent 50%, #0672a2 50%);
-  -webkit-transform: scale(1.1) rotate(-108deg);
-      -ms-transform: scale(1.1) rotate(-108deg);
-          transform: scale(1.1) rotate(-108deg);
-}
-
-.boostrap {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0.2)));
-  background: -o-linear-gradient(bottom, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0.2) 50%);
-  -webkit-transform: rotate(153deg);
-      -ms-transform: rotate(153deg);
-          transform: rotate(153deg);
-}
-.boostrap:before, .boostrap:after {
-  color: black;
-}
-.boostrap:before {
-  content: "Boostrap";
-  background: purple content-box;
-  -webkit-transform: rotate(-153deg);
-      -ms-transform: rotate(-153deg);
-          transform: rotate(-153deg);
-  text-transform: uppercase;
-}
-.boostrap:after {
-  content: "85%";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, purple));
-  background: -o-linear-gradient(transparent 50%, purple 50%);
-  background: linear-gradient(transparent 50%, purple 50%);
-  -webkit-transform: scale(1.1) rotate(-153deg);
-      -ms-transform: scale(1.1) rotate(-153deg);
-          transform: scale(1.1) rotate(-153deg);
-}
-
 .efecto-rayas-3 {
   height: auto;
 }
@@ -1205,10 +918,11 @@ h1 {
 }
 .info-desa .col-12 .info-web {
   max-width: 600px;
-  width: 90%;
+  width: 100%;
 }
 .info-desa img {
   height: 400px;
+  width: 100%;
 }
 
 .text-azul {
@@ -1271,5 +985,30 @@ h1 {
   background: -webkit-gradient(linear, left top, right top, from(#499bea), to(#00affe));
   background: linear-gradient(to right, #499bea 0%, #00affe 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#499bea", endColorstr="#00affe", GradientType=1 );
+}
+
+.hab-len {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50%;
+  border: 5px solid white;
+  max-width: 350px;
+  width: 100%;
+  height: 350px;
+  background: white;
+}
+.hab-len .img-len {
+  height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */
