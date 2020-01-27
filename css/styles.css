@@ -1033,4 +1033,105 @@ h1 {
 .hab-len .img-len {
   height: 200px;
 }
+
+.redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.redes-sociales svg {
+  width: 30px;
+  height: 30px;
+}
+.redes-sociales svg path {
+  fill: white;
+}
+.redes-sociales .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  background: #0672a2;
+}
+
+.orden-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.poderes {
+  height: 350px;
+  width: 350px;
+  background: #f2f6f8;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #f2f6f8), color-stop(50%, #d8e1e7), color-stop(51%, #b5c6d0), color-stop(100%, #e0eff9));
+  background: -o-linear-gradient(left, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#f2f6f8), color-stop(50%, #d8e1e7), color-stop(51%, #b5c6d0), to(#e0eff9));
+  background: linear-gradient(to right, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f2f6f8", endColorstr="#e0eff9", GradientType=1 );
+}
+
+.rotacion {
+  width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation-name: rotar;
+          animation-name: rotar;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes rotar {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
+@keyframes rotar {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
 /*# sourceMappingURL=styles.css.map */

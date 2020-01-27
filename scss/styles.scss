@@ -819,4 +819,62 @@ h1 {
 
     }
   }
-  
+  .redes-sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+      svg{
+         width: 30px;
+         height: 30px;
+         path{
+            fill:white;
+         }
+      }
+      .redes{
+         display: flex;
+      }
+  }
+  .footer{
+     background: #0672a2;
+  }
+   .orden-footer{
+       display: flex;
+       justify-content: center;
+      align-items: center;
+    
+    }
+.poderes{
+  height: 350px;
+  width: 350px;
+  background: rgba(242,246,248,1);
+background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(50%, rgba(216,225,231,1)), color-stop(51%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
+background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+}
+.rotacion {
+        width: 350px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: rotar;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes rotar {
+        from {
+               transform: rotateZ(0deg);
+               transform: translateY(0px);
+        }
+        to {
+               transform: rotateZ(360deg);
+                transform: translateY(300px);
+        }
+    }
