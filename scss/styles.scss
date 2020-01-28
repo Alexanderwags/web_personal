@@ -123,7 +123,7 @@ p{
                 top: 0;
               }
                .info-port-2{
-                width: 260px;
+                width: 218px;
                 margin:0;
               }
 
@@ -199,7 +199,7 @@ p{
 
             .contenedor{
                 width:200px;
-                    background: #0086c2;
+                    background: white;
                      display: flex;
           align-items: center;
           justify-content: center;
@@ -220,7 +220,7 @@ p{
                   overflow: hidden;
 
                   h1{
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                     width: 200px;
                     margin-left: 200px;
 
@@ -231,8 +231,8 @@ p{
                     padding-top: 3%;
                     padding-bottom: 3%;
                     width: 100%;
-                    h4{
-                      font-size: 1rem;
+                    h2{
+                      font-size: 1.5rem;
                     }
 
                   }
@@ -280,19 +280,19 @@ p{
             position: relative;
 
             .contenedor{
-                width:330px;
-                    background: #0086c2;
+                width:220px;
+                    background: #11aaf9;
                      display: flex;
           align-items: center;
           justify-content: center;
            flex-direction:column;
                position: absolute;
-            bottom: 0;
-            right: 0px;
+          padding-left: 10px;
+            right: 0;
             border-radius: 50%;
             box-shadow: unset;
                .info-port.gmd-3{
-                  width: 260px;
+                  width: 200px;
                   margin: 0;
                   display: flex;
                   flex-direction: column;
@@ -300,7 +300,8 @@ p{
                   justify-content: center; 
                   height: 300px; 
                   box-shadow: unset;
-                  overflow: hidden;
+                  overflow: hidden; 
+                   background: #11aaf9;
                   h1{
                     font-size: 1.3rem;
                     width: 200px;
@@ -311,8 +312,11 @@ p{
                     margin: 0;
                     height: 150px;
                     width: 100%;
-                    h4{
-                      font-size: 1rem;
+                    background: #11aaf9!important;
+                    .letra{
+                      font-size: 2.2rem;
+                      color: white;
+
                     }
 
                   }
@@ -353,7 +357,7 @@ p{
        display: flex;
    align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 250px;
     height: 300px;
    
     h4{
@@ -906,9 +910,9 @@ h1 {
   align-items: center;
  
         .rueda{
-        max-width: 600px;
-        max-height: 600px;
-        width: 100%;
+        width: 600px;
+        height: 600px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1005,4 +1009,46 @@ h1 {
    .portafolio{
     display: none;
    }
+   .info-desa .row{
+    display: flex;
+      flex-direction: column;
+   }
+}
+@media(max-width: 479px){
+
+   .info-port{
+         background: white;
+          .info-port-2{
+               background: white!important;
+             .letra{
+                text-align: center;
+
+             }
+          }
+          
+   }
+   .efectos-rayas-1:before{
+         background: white!important;
+   }
+   
+}
+@media(max-width: 374px){
+  .hab-len{
+    height: 300px;
+   }
+}
+
+@media(min-width: 480px) and (max-width: 576px){
+ 
+   .info-port{
+         background: #11aaf9;
+          .info-port-2{
+               background: white!important;
+             .letra{
+                text-align: center;
+             }
+          }
+          
+   }
+ 
 }
