@@ -239,11 +239,11 @@ p {
 }
 @media (max-width: 479px) {
   .portada.efectos-rayas-1 {
-    height: 450px;
+    height: 500px;
     position: relative;
   }
   .portada.efectos-rayas-1 .img-fondo {
-    height: 450px;
+    height: 500px;
   }
   .portada.efectos-rayas-1 .contenedor {
     width: 200px;
@@ -715,8 +715,8 @@ p {
 
 .overlay a:hover {
   text-decoration: none;
-  color: black !important;
-  background-color: #fff;
+  color: white !important;
+  background-color: #0672a2;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -737,7 +737,7 @@ p {
 }
 
 .overlay .closebtn:hover {
-  background-color: #EA512F !important;
+  background-color: #00affe !important;
 }
 
 #estudios {

@@ -191,9 +191,9 @@ p{
   @media (max-width: 479px){
        
        .portada.efectos-rayas-1{
-            height: 450px;
+            height: 500px;
             .img-fondo{
-                height: 450px;
+                height: 500px;
             }
             position: relative;
 
@@ -587,8 +587,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 .overlay a:hover{
 
   text-decoration: none;
-  color: black!important;
-  background-color: #fff;
+  color: white!important;
+  background-color: #0672a2;
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 
@@ -606,7 +606,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 
 }
 .overlay .closebtn:hover{
-  background-color: #EA512F!important;
+  background-color: #00affe !important;
+
   
 }
 #estudios{
