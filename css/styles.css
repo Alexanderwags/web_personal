@@ -1349,4 +1349,234 @@ h1 {
     text-align: center;
   }
 }
+.portafolio-pc {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.portafolio-pc .monitor-mesa {
+  width: 1200px;
+  height: 700px;
+}
+.portafolio-pc .pc {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portafolio-pc .pc #carouselExampleIndicators {
+  position: absolute;
+  top: 38px;
+  width: 372px;
+  height: 195px;
+  left: 42.5%;
+}
+.portafolio-pc .pc #carouselExampleIndicators .carousel-item {
+  height: 195px;
+}
+.portafolio-pc .pc #carouselExampleIndicators .carousel-item .img-ca {
+  height: 195px;
+}
+.portafolio-pc .pc .mesa {
+  margin-top: -87px;
+  height: 40px;
+}
+.portafolio-pc .pc .lampara {
+  position: absolute;
+  left: 0;
+  height: 300px;
+  top: 168px;
+}
+.portafolio-pc .port-peque {
+  height: 230px;
+}
+.portafolio-pc .port-peque img {
+  height: 230px;
+}
+
+.accordion .card-body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.accordion .card-body .link-pag {
+  position: absolute;
+  top: 127px;
+  width: 420px;
+  height: 240px;
+}
+.accordion .card-body .link-pag .img-pag {
+  height: 240px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .portafolio-pc .monitor-mesa {
+    width: 700px;
+    height: auto;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators {
+    top: 26px;
+    width: 216px;
+    height: 130px;
+    left: 41.5%;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item {
+    height: 130px;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item .img-ca {
+    height: 130px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .portafolio-pc .monitor-mesa {
+    width: 575px;
+    height: auto;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators {
+    top: 22px;
+    width: 177px;
+    height: 105px;
+    left: 41.5%;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item {
+    height: 105px;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item .img-ca {
+    height: 105px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 575px) {
+  .portafolio-pc .monitor-mesa {
+    width: 470px;
+    height: auto;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators {
+    top: 19px;
+    width: 144px;
+    height: 85px;
+    left: 41.5%;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item {
+    height: 85px;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item .img-ca {
+    height: 85px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .portafolio-pc .centrar h1 {
+    font-size: 2rem;
+  }
+  .portafolio-pc .monitor-mesa {
+    width: 325px;
+    height: auto;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators {
+    top: 12px;
+    width: 100px;
+    height: 60px;
+    left: 41.5%;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item {
+    height: 60px;
+  }
+  .portafolio-pc .pc #carouselExampleIndicators .carousel-item .img-ca {
+    height: 60px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  .carousel-control-prev-icon {
+    height: 10px;
+  }
+
+  .accordion .card-body {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .accordion .card-body .pc-mov {
+    width: 320px;
+  }
+  .accordion .card-body .link-pag {
+    position: absolute;
+    top: 91px;
+    width: 261px;
+    height: 150px;
+  }
+  .accordion .card-body .link-pag .img-pag {
+    height: 150px;
+  }
+
+  .card .card-body h1 {
+    font-size: 2rem;
+  }
+
+  .row.orden-footer .d-md-flex.centrar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
