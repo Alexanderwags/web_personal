@@ -850,6 +850,19 @@ h1 {
       align-items: center;
     
     }
+    @media(min-width: 992px){
+        .acerca,.tutorial,.redes-sociales{
+        min-height: 250px;
+        height: 100%;
+       }
+    }
+   
+    .redes-sociales{
+            display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+   
 .poderes{
   height: 320px;
   width: 320px;    
@@ -905,95 +918,9 @@ h1 {
        color: white;
     }
 }
-.portafolio-mio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-        .rueda{
-        width: 600px;
-        height: 600px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-        .gal-1{
-            position: absolute;
-            top: 0;
-            width: 250px;
-            height: 150px;
-            z-index: 1;
-            img{
-                 min-height:150px;
-               height: 100%;
-            }
-        }
-        .gal-2{
-            position: absolute;
-            bottom: 0;
-            width: 250px;
-            height: 150px;
-            img{
-                 min-height: 150px;
-               height: 100%;
-            }
-        }
-        .gal-3{
-            position: absolute;
-            right: 0;
-            width: 250px;
-            height: 150px;
-            img{
-                 min-height: 150px;
-               height: 100%;
-            }
-        }
-        .gal-4{
-            position: absolute;
-            left: 0;
-            width: 250px;
-            height: 150px;
-            img{
-               min-height: 150px;
-               height: 100%;
-            }
-        }
-      }
-  
+.carousel-indicators{
+   z-index:-1;
 }
-
-.rueda .gal-1{
-    transition: 3s;
-}
-.rueda .gal-1:hover{
-     
-     
-}
-.gal-11{
-    transition: 3s;
-   margin-bottom:1500px;
-}
-.rueda .gal-1:hover + .gal-11{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-        height: inherit;
-     transition: 1s;
-     
-     z-index: -1;
-     margin: 0;
-     a{
-       height: 100%;
-        img{
-          height: 100%;
-        }
-     }
-} 
-
-
 .centrar{
 
        display: flex;
@@ -1085,7 +1012,7 @@ h1 {
               top: 38px;
               width:372px;
               height: 195px;
-              left: 42.5%;
+              left: 41.5%;
               .carousel-item{
                  height: 195px;
                  .img-ca{
@@ -1140,11 +1067,58 @@ h1 {
 
     
   }
-   
+  .btn.btn-link{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    text-decoration: none;
+    color:  #0672a2;
+  }
+   .btn.btn-link:hover{
+    text-decoration: none;
+    color: #00affe; 
+    transition: 0.3s;
+  }
+  .card-header{
+
+    transition: 0.3s;
+    border-radius:0;
+  }
+  .card-header:hover{
+    background-color: #0672a2;
+
+     transition: 0.3s;
+     .btn.btn-link{
+       color: white;
+     }
+  }
+  .ver-pag{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #0672a2;
+    transition: 0.3s;
+    box-shadow: 0 0px 49px rgba(0, 0, 0, 0.19), -20px -17px 1px rgba(253, 253, 253, 0.23);
+        border: 2px solid #0672a2;
+  }
+  .ver-pag:hover{
+     text-decoration: none;
+     color: white;
+     background-color: #0672a2;
+      transition: 0.3s;
+       border: 2px solid white;
+  }
+
 
 }
 @media(min-width: 768px) and (max-width:1200px){
-  
+   .carousel-indicators{
+      display: none!important;
+     }
   .portafolio-pc{
       
       .monitor-mesa{
@@ -1171,7 +1145,9 @@ h1 {
    
 }
 @media(min-width: 576px) and (max-width:767px){
-  
+   .carousel-indicators{
+      display: none!important;
+     }
   .portafolio-pc{
       
       .monitor-mesa{
@@ -1200,7 +1176,9 @@ h1 {
    
 }
 @media(min-width:480px) and (max-width:575px){
-  
+   .carousel-indicators{
+      display: none!important;
+     }
   .portafolio-pc{
       
       .monitor-mesa{

@@ -1081,6 +1081,24 @@ h1 {
           align-items: center;
 }
 
+@media (min-width: 992px) {
+  .acerca, .tutorial, .redes-sociales {
+    min-height: 250px;
+    height: 100%;
+  }
+}
+.redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .poderes {
   height: 320px;
   width: 320px;
@@ -1181,109 +1199,8 @@ h1 {
   color: white;
 }
 
-.portafolio-mio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.portafolio-mio .rueda {
-  width: 600px;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-.portafolio-mio .rueda .gal-1 {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 150px;
-  z-index: 1;
-}
-.portafolio-mio .rueda .gal-1 img {
-  min-height: 150px;
-  height: 100%;
-}
-.portafolio-mio .rueda .gal-2 {
-  position: absolute;
-  bottom: 0;
-  width: 250px;
-  height: 150px;
-}
-.portafolio-mio .rueda .gal-2 img {
-  min-height: 150px;
-  height: 100%;
-}
-.portafolio-mio .rueda .gal-3 {
-  position: absolute;
-  right: 0;
-  width: 250px;
-  height: 150px;
-}
-.portafolio-mio .rueda .gal-3 img {
-  min-height: 150px;
-  height: 100%;
-}
-.portafolio-mio .rueda .gal-4 {
-  position: absolute;
-  left: 0;
-  width: 250px;
-  height: 150px;
-}
-.portafolio-mio .rueda .gal-4 img {
-  min-height: 150px;
-  height: 100%;
-}
-
-.rueda .gal-1 {
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-}
-
-.gal-11 {
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-  margin-bottom: 1500px;
-}
-
-.rueda .gal-1:hover + .gal-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: inherit;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+.carousel-indicators {
   z-index: -1;
-  margin: 0;
-}
-.rueda .gal-1:hover + .gal-11 a {
-  height: 100%;
-}
-.rueda .gal-1:hover + .gal-11 a img {
-  height: 100%;
 }
 
 .centrar {
@@ -1397,7 +1314,7 @@ h1 {
   top: 38px;
   width: 372px;
   height: 195px;
-  left: 42.5%;
+  left: 41.5%;
 }
 .portafolio-pc .pc #carouselExampleIndicators .carousel-item {
   height: 195px;
@@ -1447,8 +1364,75 @@ h1 {
 .accordion .card-body .link-pag .img-pag {
   height: 240px;
 }
+.accordion .btn.btn-link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  color: #0672a2;
+}
+.accordion .btn.btn-link:hover {
+  text-decoration: none;
+  color: #00affe;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.accordion .card-header {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.accordion .card-header:hover {
+  background-color: #0672a2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.accordion .card-header:hover .btn.btn-link {
+  color: white;
+}
+.accordion .ver-pag {
+  width: 90%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  color: #0672a2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0px 49px rgba(0, 0, 0, 0.19), -20px -17px 1px rgba(253, 253, 253, 0.23);
+          box-shadow: 0 0px 49px rgba(0, 0, 0, 0.19), -20px -17px 1px rgba(253, 253, 253, 0.23);
+  border: 2px solid #0672a2;
+}
+.accordion .ver-pag:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #0672a2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid white;
+}
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .carousel-indicators {
+    display: none !important;
+  }
+
   .portafolio-pc .monitor-mesa {
     width: 700px;
     height: auto;
@@ -1467,6 +1451,10 @@ h1 {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .carousel-indicators {
+    display: none !important;
+  }
+
   .portafolio-pc .monitor-mesa {
     width: 575px;
     height: auto;
@@ -1489,6 +1477,10 @@ h1 {
   }
 }
 @media (min-width: 480px) and (max-width: 575px) {
+  .carousel-indicators {
+    display: none !important;
+  }
+
   .portafolio-pc .monitor-mesa {
     width: 470px;
     height: auto;
